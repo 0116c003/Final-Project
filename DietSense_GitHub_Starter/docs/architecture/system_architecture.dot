@@ -1,0 +1,15 @@
+digraph architecture {
+ graph [rankdir=LR, bgcolor="white", pad="0.25", nodesep="0.4", ranksep="0.55", fontname="Arial"];
+ node [shape=box, style="rounded,filled", fillcolor="#f3f6fb", color="#506783", fontname="Arial", fontsize=13, margin="0.16,0.13"];
+ edge [color="#60758a", arrowsize=0.8];
+ A [label="01 User / Web Chat\nMeal description"];
+ B [label="02 Query Processing\nIntent & food entities"];
+ C [label="03 Planner Agent\nLLM + tool selection"];
+ D [label="04 Retrieval\nUSDA / Taiwan / curated"];
+ E [label="05 Analytics Engine\nkcal / macros / BMR / TDEE"];
+ F [label="06 Domain Knowledge\nGuidelines & safety"];
+ G [label="07 Decision\nSummary / recommendation"];
+ H [label="08 Output & Interaction\nEvidence + correction"];
+ A->B->C->D->E->F->G->H;
+ H->C [label="user correction / clarification",style=dashed,constraint=false,color="#9d6f52"];
+}

@@ -1,0 +1,2 @@
+# Minimal prototype uses Python standard library only.
+# Add provider/database dependencies when integrations are implemented.
