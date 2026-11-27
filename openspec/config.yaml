@@ -1,0 +1,5 @@
+schema: spec-driven
+context: |
+  DietSense is a proposal-stage conversational nutrition agent.
+  README.md and DESIGN.md describe the current project.
+  The deterministic calculation scaffold is implemented; live AI integration is planned.
